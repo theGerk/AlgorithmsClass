@@ -1,0 +1,29 @@
+Test array Ascending (length: 100)
+Took 00000000000000273547 nano seconds - Bubble
+Took 00000000000000282593 nano seconds - Selection
+Took 00000000000000198209 nano seconds - Insertion
+Took 00000000000000391545 nano seconds - Heap
+Took 00000000000000403997 nano seconds - Merge
+Took 00000000000000312935 nano seconds - Quick
+
+Test array Ascending (length: 1000)
+Took 00000000000004519796 nano seconds - Bubble
+Took 00000000000003378990 nano seconds - Selection
+Took 00000000000000031052 nano seconds - Insertion
+Took 00000000000002467933 nano seconds - Heap
+Took 00000000000000903082 nano seconds - Merge
+Took 00000000000002526621 nano seconds - Quick
+
+Test array Ascending (length: 10000)
+Took 00000000000017181267 nano seconds - Bubble
+Took 00000000000010415234 nano seconds - Selection
+Took 00000000000000317887 nano seconds - Insertion
+Took 00000000000004271064 nano seconds - Heap
+Took 00000000000065552583 nano seconds - Merge
+Took 00000000000009959583 nano seconds - Quick
+
+Test array Ascending (length: 100000)
+Took 00000000001917677885 nano seconds - Bubble
+Took 00000000001008361771 nano seconds - Selection
+Took 00000000000003286747 nano seconds - Insertion
+Took 00000000000013642884 nano seconds - Heap
