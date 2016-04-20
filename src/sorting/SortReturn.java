@@ -10,6 +10,6 @@ public class SortReturn {
 	}
 	
 	public String toString() {
-		return String.format("Took %020d seconds", time / MyMath.uIntPow(1, 9));
+		return MyMath.toNicelyFormatedTime(time);
 	}
 }

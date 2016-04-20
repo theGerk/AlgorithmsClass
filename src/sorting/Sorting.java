@@ -33,4 +33,8 @@ public class Sorting
 	public static SortReturn heap(int[] arg) {
 		return new SortReturn(System.nanoTime(), HeapSort.execute(arg), System.nanoTime());
 	}
+	
+	public static SortReturn radix(int[] arg) {
+		return new SortReturn(System.nanoTime(), RadixSort.execute(arg), System.nanoTime());
+	}
 }

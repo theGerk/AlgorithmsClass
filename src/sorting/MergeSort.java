@@ -16,9 +16,11 @@ public class MergeSort {
 	
 	private static int[] parse(int[] array, int startA, int startB, int end) {
 		int a = startA;
+		int k = startA;
 		int b = startB;
-		int[] output = ArrayStuff.copy(array);
+		int[] output = ArrayStuff.copy(array, startA, end);
 		boolean firstComplete;	//false -> pull from a,		true -> pull from b
+		startA = 0;
 		while(true) {
 			if(a == startB) {
 				firstComplete = true;
@@ -43,6 +45,10 @@ public class MergeSort {
 				output[startA++] = array[a++];
 			}
 		}
-		return output;
+		
+		for(int i = 0; i < output.length; i++)
+			array[i + k] = output[i];
+		
+		return array;
 	}
 }

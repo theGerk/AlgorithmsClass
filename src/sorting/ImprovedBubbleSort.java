@@ -7,7 +7,7 @@ public class ImprovedBubbleSort {
 			int flipped = 0;
 			for(int j = 1; j < i; j++)
 			{
-				if(arg[j - 1] < arg[j])
+				if(arg[j - 1] > arg[j])
 				{
 					int temp = arg[j - 1];
 					arg[j - 1] = arg[j];

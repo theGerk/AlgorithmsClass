@@ -18,11 +18,17 @@ public class ArrayStuff
 		return output;
 	}
 	
-	public static int[] copy(int[] arg)
-	{
+	public static int[] copy(int[] arg) {
 		int [] output = new int [arg.length];
 		for(int i = 0; i < arg.length; i++)
 			output[i] = arg[i];
+		return output;
+	}
+	
+	public static int[] copy(int[] arg, int start, int end) {
+		int[] output = new int[end - start];
+		for(int i = 0; i < output.length; i++)
+			output[i] = arg[start + i];
 		return output;
 	}
 	
@@ -35,7 +41,11 @@ public class ArrayStuff
 	
 	
 	public static int[] randomize(int[] arg) {
-		for(int i = 0; i < arg.length; i++)
+		return randomize(arg, 1);
+	}
+	
+	public static int[] randomize(int[] arg, int distance) {
+		for(int i = 0; i < arg.length; i += distance)
 			swap(arg, Main.rand.nextInt(arg.length), i);
 		return arg;
 	}
